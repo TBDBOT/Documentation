@@ -15,7 +15,6 @@ const config = {
   favicon: 'img/Logo.png',
   organizationName: 'R-Tex-Bot', // Usually your GitHub org/user name.
   projectName: 'R-Tex', // Usually your repo name.
-
   presets: [
     [
       'classic',
@@ -46,7 +45,7 @@ const config = {
         title: 'R-Tex Documentation',
         logo: {
           alt: 'Logo',
-          src: 'img/logo.png',
+          src: 'img/Logo.png',
         },
         items: [
           {
