@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'log',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/Logo.png',
   organizationName: 'R-Tex-Bot', // Usually your GitHub org/user name.
   projectName: 'R-Tex', // Usually your repo name.
 
