@@ -32,6 +32,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         
       - name: Create File
+        uses: finnp/create-file-action@1.0.0
         env:
             FILE_NAME: "CNAME"
             FILE_DATA: "docs.rtexbot.com"
