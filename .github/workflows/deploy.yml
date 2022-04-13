@@ -28,12 +28,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         
-      - name: Create File
-        uses: finnp/create-file-action@1.0.0
-        env:
-            FILE_NAME: "CNAME"
-            FILE_DATA: "docs.rtexbot.com"
-
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           # Build output to publish to the `gh-pages` branch:
@@ -45,3 +39,10 @@ jobs:
           # You can swap them out with your own user credentials.
           user_name: github-actions[bot]
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
+          
+      - name: Create File
+        uses: finnp/create-file-action@1.0.0
+        env:
+            FILE_NAME: "CNAME"
+            FILE_DATA: "docs.rtexbot.com"
+
