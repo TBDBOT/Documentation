@@ -18,6 +18,8 @@ jobs:
         with:
           # choose node.js version to use
           node-version: '16'
+      - name: Setup file creation
+        uses: finnp/create-file-action@1.0.0
 
       - name: Install dependencies
         run: npm install
@@ -30,7 +32,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         
       - name: Create File
-        uses: finnp/create-file-action@1.0.0
         env:
             FILE_NAME: "CNAME"
             FILE_DATA: "docs.rtexbot.com"
