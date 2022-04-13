@@ -18,9 +18,6 @@ jobs:
         with:
           # choose node.js version to use
           node-version: '16'
-      - name: Setup file creation
-        uses: finnp/create-file-action@1.0.0
-
       - name: Install dependencies
         run: npm install
       - name: Build website
