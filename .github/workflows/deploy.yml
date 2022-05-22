@@ -23,6 +23,8 @@ jobs:
       - name: Build website
         run: npm run build
 
+      - name: Create CNAME
+        run: echo "www.rtexbot.com" > build/CNAME
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
       - name: Deploy to GitHub Pages
@@ -39,10 +41,3 @@ jobs:
           # You can swap them out with your own user credentials.
           user_name: github-actions[bot]
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
-          
-      - name: Create File
-        uses: finnp/create-file-action@1.0.0
-        env:
-            FILE_NAME: "CNAME"
-            FILE_DATA: "docs.rtexbot.com"
-
